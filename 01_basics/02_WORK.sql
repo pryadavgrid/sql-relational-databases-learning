@@ -118,11 +118,29 @@ GROUP BY grade;
 
 
 -- HAVING :  similer to tha WHERE, we use HAVING when we want to apply any "condition after grouping"
--- in this query first it filter the row where  
+-- in this query first it find where Having Condition is match if match then collect the data otherwise none
+-- like we have diffrent type of mark so this query have to group by grade where every group of grade contain atleat one >80 marks if any grade has no any >80 marks group will not countable
 
 SELECT grade, SUM(marks)
 FROM student
 GROUP BY grade
 HAVING MAX(marks) > 80;
 
+
+
+-- GENERAL ORDER
+
+-- SELECT column(s)
+-- FROM table_name
+-- WHERE condition
+-- GROUP column(s)
+-- HAVING condition
+-- ORDER BY column(s) ASC;
+
+
+SELECT city, SUM(marks)
+FROM student
+WHERE grade = "A"
+GROUP BY city
+HAVING MAX(marks) > 70;
 
