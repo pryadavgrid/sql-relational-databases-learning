@@ -16,6 +16,7 @@ grade VARCHAR(2),
 city VARCHAR(20)
 );
 
+DROP TABLE student;
 
 -- Insert 10 sample records into student table
 INSERT INTO student (rollno, name, marks, grade, city)
@@ -25,11 +26,11 @@ VALUES
 (103, 'Rahul Singh', 92, 'A', 'Lucknow'),
 (104, 'Sneha Reddy', 88, 'A', 'Hyderabad'),
 (105, 'Vikram Patel', 67, 'C', 'Ahmedabad'),
-(106, 'Neha Gupta', 74, 'B', 'Jaipur'),
-(107, 'Arjun Kumar', 59, 'D', 'Patna'),
-(108, 'Pooja Nair', 81, 'A', 'Kochi'),
+(106, 'Neha Gupta', 74, 'B', 'Delhi'),
+(107, 'Arjun Kumar', 59, 'D', 'Hyderabad'),
+(108, 'Pooja Nair', 81, 'A', 'Delhi'),
 (109, 'Rohit Das', 69, 'C', 'Kolkata'),
-(110, 'Kavya Iyer', 90, 'A', 'Chennai');
+(110, 'Kavya Iyer', 90, 'A', 'Delhi');
 
 
 -- Show all data (all rows and columns)
